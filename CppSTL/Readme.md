@@ -1,0 +1,6 @@
+//STL: standard template library it is a powerful and extensibe collection of template classes and functions in c++. It provides a set of common data structures and algorithms that can be used with any data type. The STL includes containers such as vectors, lists, queues, stacks, and maps, as well as algorithms for sorting, searching, and manipulating these containers. The STL is designed to be efficient and easy to use, making it a popular choice for C++ programmers.
+# Common Components of STL:
+1. Containers: These are data structures that store and organize data. Examples include vector, list, deque, set, map, etc.
+2. Algorithms: These are functions that perform operations on containers, such as sorting, searching, and manipulating data. Examples include sort, find, reverse, etc.
+3. Iterators: These are objects that allow you to traverse through the elements of a container. They provide a way to access and manipulate the elements of a container without exposing the underlying implementation. Examples include begin(), end(), etc.
+4. Functors: These are objects that can be called as if they were functions. They are often used in conjunction with algorithms to provide custom behavior. Examples include less, greater, etc.  
