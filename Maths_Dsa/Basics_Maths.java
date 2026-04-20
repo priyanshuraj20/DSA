@@ -149,6 +149,7 @@ public class Basics_Maths {
                 count++;
             }
             n = n>>1;
+            if(count > 1) return false;
         }
         if(count == 1) return true;
         return false;
@@ -196,7 +197,7 @@ public class Basics_Maths {
         return (a / gcdEuclid(a, b)) * b;
     }
 
-    //bninary expoenention or fast exponentition:it is one of the most efficient ways to calculate large powers a to power b . in O(log b) time
+    //b inary expoenention or fast exponentition:it is one of the most efficient ways to calculate large powers a to power b . in O(log b) time
     private static long pow(long a, long b) {
         if (b == 0) {
             return 1;
@@ -280,6 +281,7 @@ public class Basics_Maths {
 
         // fill remaining using relation:
         // invFact[i] = invFact[i+1] * (i+1)
+        //invFact[i+1]=1/(i+1)1​⋅invFac[i]; toh:
         for (int i = maxN - 1; i >= 0; i--) {
             invFact[i] = (invFact[i + 1] * (i + 1)) % MOD;
         }
@@ -461,6 +463,6 @@ F(n) = a1*F(n-1) + a2*F(n-2) + ... + ak*F(n-k)
             System.out.println();
         }
         //ans will be result[0][0] for nth fibonnaci
-        
+
      }
 }
